@@ -1,0 +1,15 @@
+* { font-family: Arial; font-size: 10pt }
+a { color: #0000DE }
+.account-area, .account-area * { color: #000000; font-size: 9pt }
+.link { color: #0000DE }
+.command, .command * { color: #8486CE }
+.site, .site * { color: #008200 }
+.count { color: #A59ABD; font-size: 9pt }
+.interval { color: #888888 }
+.left-navigation .heading { margin: 3 0 3 0 }
+.left-navigation .item { margin: 1 0 1 10 }
+.left-navigation .selected-item { background: #E7EFFF; padding: 1 2 1 10; margin: 1 0 1 0 }
+.left-navigation .selected-item a { color: #000000; font-weight: bold }
+.heading-bar, .heading-bar * { color: #000000; font-size: 12pt }
+.list-number { font-size: 28pt }
+.footer * { color: #000000; font-size: 9pt }
