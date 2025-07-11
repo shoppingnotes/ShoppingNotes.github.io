@@ -1,20 +1,301 @@
+
+
+
 <html>
 
 <head>
+  <meta name="title" content="ShoppingNotes.com - Never Miss a Sale Again! Get Alerts When Price Drops">
+  <meta name="description" content="ShoppingNotes.com - price alert service for any products, any stores. Now refer friends and get any gift cards you want!">
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>ShoppingNotes.com has been shut down</title>
+  <meta http-equiv="Pragma" content="no-cache">
+  <title>ShoppingNotes.com - Never Miss a Sale Again! Get Alerts When Price Drops</title>
+  <link rel="StyleSheet" type="text/css" href="/shoppingnotes.css">
+  <!-- <link rel="image_src" href="http://www.shoppingnotes.com/image/logotype227.png"> -->
 </head>
 
-<body style="font-family: Arial; font-size: 12pt">
-
-<br><br>
+<body><table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 5">
+  <tr>
+    <td>
+      <a href="/"><img src="/logologotypebeta39.gif" alt="ShoppingNotes.com" border="0"></a>
+    </td>
+    <td width="100%" style="vertical-align: middle">    </td>
+    <td class="account-area" style="vertical-align: bottom">
+      <div style="white-space: nowrap"><a href="/my">My Shopping Notes</a>&nbsp; <a href="/signup">Sign Up</a>&nbsp; <a href="/signin">Sign In</a>      </div>
+    </td>
+  </tr>
+</table><div style="border-top: 1px solid #E7EFFF"></div>
+<br>
 
 <center>
-  <span style="color: #FF0000; font-weight: bold">
-    ShoppingNotes.com has been shut down.
-  </span>
-  If you had an account and want a copy of your saved links, please email
-  <a href="mailto: info@shoppingnotes.com" style="color: #000000; font-weight: bold">info@shoppingnotes.com</a>.
+  <table cellpadding="0" cellspacing="0">
+    <tr style="vertical-align: top">
+      <td width="460">
+        <div style="margin: 0px 20px 0px 20px">
+          <div style="color: #000000; font-size: 16pt; white-space: nowrap">
+            Never Miss a Sale Again!!
+            <br>
+            &nbsp; &nbsp; Get Alerts When Price Drops
+          </div>
+          <br>
+
+          <form method="POST" action="/getalerts">
+            <div style="background-color: #E7EFFF; width: 420px; padding: 10px 10px 10px 10px">
+              <table cellpadding="0" cellspacing="0" style="color: #5F5F5F; background-color: #E7EFFF">
+                <tr>
+                  <td>
+                    <div style="color: #000000; font-size: 11pt; white-space: nowrap">
+                      <b style="font-size: 11pt">Product page URLs</b> to watch
+                      price on
+                    </div>
+                  </td>
+                  <!--
+                  <td class="command" width="100%" align="right" nowrap>
+                    <a href="javascript: more_urls();">More URLs</a>
+                  </td>
+                  -->
+                </tr>
+              </table>
+              <div id="urlsarea"><input type="text" id="url0" name="urls[]" style="color: #888888; width: 100%; margin-top: 3px" onFocus="javascript: url0_on_focus();" onKeyDown="javascript: url_on_key_down(0);" onKeyUp="javascript: url_on_key_up(0);"></div>
+              <table cellpadding="0" cellspacing="0" style="color: #5F5F5F; background-color: #E7EFFF; margin-top: 10px">
+                <tr>
+                  <td>
+                    <div style="color: #000000; font-size: 11pt; white-space: nowrap">
+                      <b style="font-size: 11pt">Email address</b> to receive
+                      price alerts
+                    </div>
+                  </td>
+                  <!-- <td width="100%" align="right" nowrap>
+                    <span id="sendalertstofriends" class="command">
+                      <a href="javascript: send_alerts_to_friends();">Send Alerts to Friends</a>
+                    </span>
+                  </td> -->
+                </tr>
+              </table>
+              <div>
+              <input type="text" id="email" name="email" style="color: #888888; width: 100%; margin-top: 3px" onFocus="javascript: email_on_focus();">              </div>
+              <div id="friendemailarea"></div>
+            </div>
+            <br>
+
+            <center>
+              <input type="submit" name="getalerts" value="Get Alerts" style="color: #FFFFFF; font-size: 12pt; font-weight: bold; background-color: #FFAB2F" onClick="javascript: getalerts_on_click();">&nbsp;
+              <span class="command"><a href="/help/getalerts">How It Works</a></span>
+            </center>
+          </form>
+        </div>
+
+        <center>
+          <div style="width: 460px; border-top-color: #E7EFFF; border-top-width: 1px; border-top-style: solid"></div>
+        </center>
+
+        <div style="margin: 10px 20px 10px 20px">
+          <span style="color: #FF0000; font-size: 12pt; font-weight: bold">Get Amazon or any electronic gift cards of your choice</span>
+          <span style="font-size: 12pt">
+            for referring friends to use our price alert service!
+          </span>
+          <br><br>
+
+          <center>
+            <input type="button" value=" Invite Friends " style="color: #FFFFFF; font-size: 12pt; font-weight: bold; background-color: #FFAB2F" onClick="javascript: location = '/invite';">&nbsp;
+            <span class="command"><a href="/referral">Official Rules</a></span>
+          </center>
+        </div>
+
+        <center>
+          <div style="width: 460px; border-top-color: #E7EFFF; border-top-width: 1px; border-top-style: solid"></div>
+        </center>
+
+        <div style="color: #5F5F5F; margin: 10px 20px 0px 20px">
+          Don't have a product page URL? Search here! Once you find it,
+          <b>copy and paste the URL into the text box above:</b>
+        </div>
+        <br>
+
+<!-- Search Google -->
+<center>
+<form method="get" action="http://www.google.com/custom" target="google_window">
+<table bgcolor="#ffffff">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
+<label for="sbi" style="display: none">Enter your search terms</label>
+<input type="text" name="q" size="40" maxlength="255" value="" id="sbi"></input>
+<label for="sbb" style="display: none">Submit search form</label>
+<input type="submit" name="sa" value="Search" id="sbb"></input>
+<input type="hidden" name="client" value="pub-6058657476140685"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="safe" value="active"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:FFFFFF;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:39;LW:288;L:http://www.shoppingnotes.com/image/logologotypebeta39.gif;S:http://www.shoppingnotes.com;FORID:1"></input>
+<input type="hidden" name="hl" value="en"></input>
+</td></tr></table>
+</form>
 </center>
+<!-- Search Google -->
+
+        <center>
+          <div style="width: 460px; border-top-color: #E7EFFF; border-top-width: 1px; border-top-style: solid"></div>
+        </center>
+
+        <div style="margin: 10px 20px 0px 20px">
+          <table cellpadding="0" cellspacing="0" style="color: #5F5F5F">
+            <tr>
+              <td align="right" style="vertical-align: middle">As seen on</td>
+              <td style="vertical-align: bottom; padding-left: 20px">
+                <img src="/ologo.gif" width="60">
+              </td>
+              <td style="vertical-align: bottom; padding-left: 10px">
+                <a href= "http://news.cnet.com/8301-13845_3-10111968-58.html" style="font-weight: bold"><img src="/cnet.jpg" width="80" border="0"></a>
+              </td>
+              <td style="vertical-align: bottom; padding-left: 10px">
+                <!-- <a href= "http://latimesblogs.latimes.com/shopping_blog/2008/12/santas-online-h.html"> -->
+                <img src="/lat_logo_inner.gif" width="120" border="0">
+                <!-- </a> -->
+                <div style="height: 10px"></div>
+                <a href= "http://www.geeksugar.com/1641035"><img src="/geeksugar.jpg" width="120" border="0"></a>
+              </td>
+              <td style="vertical-align: middle; padding-left: 20px">
+                <a class="command" href="/press">More</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <br>
+
+        <center>
+          <div style="width: 460px; border-top-color: #E7EFFF; border-top-width: 1px; border-top-style: solid"></div>
+        </center>
+
+        <div style="color: #5F5F5F; margin: 10px 20px 0px 20px">
+          To save the hassle of copying and pasting the URL every time, install
+          the <b>Save to My Shopping Notes</b> button now.
+        </div>
+        <br>
+
+        <center>
+          <input type="button" value=" Install " style="color: #FFFFFF; font-size: 12pt; font-weight: bold; background-color: #FFAB2F" onClick="javascript: location = '/help/install';">&nbsp;
+          <span class="command"><a href="/help/userfaq#why_install">How It Works</a></span>
+        </center>
+        <br>
+
+        <center>
+          <div style="width: 460px; border-top-color: #E7EFFF; border-top-width: 1px; border-top-style: solid"></div>
+        </center>
+
+        <div style="color: #5F5F5F; margin: 10px 20px 0px 20px">
+          <b>ShoppingNotes.com</b> is
+          <b>shopping bookmark powered with price watch engine</b>. Enjoy these
+          benefits that your browser's bookmark can't offer:
+        </div>
+        <br>
+
+        <div style="margin: 0px 40px 0px 40px">
+          <table cellpadding="0" cellspacing="0" style="color: #5F5F5F">
+            <tr>
+              <td><img src="/she43.png" width="20" height="20" border="0"></td>
+              <td width="100%" style="padding-left: 10px">
+                <b>Bookmark any products</b> with image and price
+              </td>
+            </tr>
+            <tr><td style="height: 3px"></td></tr>
+            <tr>
+              <td><img src="/she3.png" width="20" height="20" border="0"></td>
+              <td width="100%" style="padding-left: 10px">
+                <b>View</b> and <b>organize bookmarks</b> all on one page
+              </td>
+            </tr>
+            <tr><td style="height: 3px"></td></tr>
+            <tr>
+              <td><img src="/bell4.gif" width="20" border="0"></td>
+              <td width="100%" style="padding-left: 10px">
+                <b>Get alerts</b> whenever price changes
+              </td>
+            </tr>
+            <tr><td style="height: 3px"></td></tr>
+            <tr>
+              <td><img src="/53.png" width="20" height="20" border="0"></td>
+              <td width="100%" style="padding-left: 10px">
+                <b>Refresh prices</b> instantly with one click
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+
+      <!--
+
+      <td width="50">&nbsp;</td>
+      <td>
+        <a href="http://www.tkqlhce.com/click-3040972-10650389" target="_top">
+          <img src="http://www.awltovhc.com/image-3040972-10650389" width="240" height="200" alt="SERGIO ROSSI for women" border="0">
+        </a>
+        <a href="http://www.jdoqocy.com/click-3040972-10731159" target="_top">
+          <img src="http://www.lduhtrp.net/image-3040972-10731150" width="240" height="200" alt="mytheresa.com" border="0" style="padding-left: 10px">
+        </a>
+
+        <div style="margin-top: 10px"></div>
+        <a href="http://www.kqzyfj.com/click-3040972-10826640" target="_top">
+          <img src="http://www.tqlkg.com/image-3040972-10826640" width="240" height="200" alt="300x250 YLiving - Lounge Modern" border="0">
+        </a>
+        <a href="http://www.tkqlhce.com/click-3040972-11144723" target="_top">
+          <img src="http://www.lduhtrp.net/image-3040972-11144723" width="240" height="200" alt="Shopbop Free Express Delivery And Easy Returns" border="0" style="padding-left: 10px">
+        </a>
+
+        <div style="margin-top: 10px"></div>
+        <a href="http://www.kqzyfj.com/click-3040972-11133252" target="_top">
+          <img src="http://www.ftjcfx.com/image-3040972-11133252" width="240" height="200" alt="" border="0">
+        </a>
+        <a href="http://www.anrdoezrs.net/click-3040972-10602085" target="_top">
+          <img src="/image/z7717568X,Clarins-Daily-Energizer.jpg" width="240" height="199" alt="" border="0" style="padding-left: 10px">
+        </a>
+
+
+      </td>
+
+      -->
+
+    </tr>
+  </table>
+</center>
+<br><br><br>
+
+<div class="footer">
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tr style="vertical-align: middle">
+        <td align="center">
+          <div style="margin-bottom: 3">
+            <a href="/">Home</a>&nbsp;
+            <a href="http://blog.shoppingnotes.com">Blog</a>&nbsp;
+            <a href="/about">About Us</a>&nbsp;
+            <a href="/privacy">Privacy</a>&nbsp;
+            <a href="/contact">Contact Us</a>&nbsp;
+            <a href="/help/userfaq">Help</a>
+          </div>
+          &copy; 2008 - 2025 ShoppingNotes, Inc. All Rights Reserved.
+        </td>      </tr>
+    </table>
+  </center>
+</div>
+<script type="text/javascript" src="/js/index.js"></script>
+
+<script type="text/javascript">
+<!--
+
+var browsergroup, nalert, nmaxalert;
+var ifexampleurl0, ifexampleemail;
+
+browsergroup = 'webkit';nalert = 0;nmaxalert = null;ifexampleurl0 = 1;ifexampleemail = 1;
+document.getElementById('url0').value = 'Example: http://www.amazon.com/dp/B001CVDZ7G';
+document.getElementById('url0').blur();
+
+document.getElementById('email').value = 'Example: paris@hilton.com';
+-->
+</script>
+
+</body>
 
 </html>
